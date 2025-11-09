@@ -2,20 +2,37 @@
 body{
     overflow-x: hidden;
 }
-/* google font  */
-h1{
-  font-family: "Dancing Script", cursive;
-  font-optical-sizing: auto;
-  
-}
 
 .carousel-item img{
-  width: 100px;
   height: 80vh;
-
 }
 
-.card-body img{
-  min-width: 50%;
-  max-height: 150px;
+/* Back to Top Button */
+#backToTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #0d6efd; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 50%; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    transition: opacity 0.3s, visibility 0.3s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#backToTopBtn.show {
+    display: block; /* Show the button */
+    opacity: 1;
+    visibility: visible;
+}
+
+#backToTopBtn:hover {
+    background-color: #0a58ca; /* Darker background on hover */
 }
