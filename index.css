@@ -1,0 +1,21 @@
+*{padding: 0;margin:0; box-sizing: border-box;}
+body{
+    overflow-x: hidden;
+}
+/* google font  */
+h1{
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  
+}
+
+.carousel-item img{
+  width: 100px;
+  height: 80vh;
+
+}
+
+.card-body img{
+  min-width: 50%;
+  max-height: 150px;
+}
